@@ -15,7 +15,7 @@ For older versions check the repository tags.
 
 ----
 ## Install procedure:
-1. ```git clone https://github.com/nunodio/bitwig-fedora.git```
+1. ```git clone https://github.com/drewLo/bitwig-fedora.git```
 
 2. ```cd bitwig-fedora```
 
