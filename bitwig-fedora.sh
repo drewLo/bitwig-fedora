@@ -101,7 +101,6 @@ function create_symbolic_links()
   ln -s /usr/lib64/libbz2.so.1 /usr/lib64/libbz2.so.1.0
 }
 
-
 #=== FUNCTION ================================================================
 # NAME: check_previous_installation
 # DESCRIPTION: Check if Bitwig Studio is already installed on system.
