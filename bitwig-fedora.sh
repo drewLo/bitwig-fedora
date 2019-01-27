@@ -97,8 +97,10 @@ function install_dependencies()
 #=============================================================================
 function create_symbolic_links()
 {
-  echo "Creating symbolic links."
-  ln -s /usr/lib64/libbz2.so.1 /usr/lib64/libbz2.so.1.0
+    if [ ! -h /usr/lib64/libbz2.so.1.0 ]; then
+        echo "Creating symbolic links."
+        ln -s /usr/lib64/libbz2.so.1 /usr/lib64/libbz2.so.1.0
+    fi
 }
 
 #=== FUNCTION ================================================================
