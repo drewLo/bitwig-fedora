@@ -102,6 +102,7 @@ function create_symbolic_links()
         ln -s /usr/lib64/libbz2.so.1 /usr/lib64/libbz2.so.1.0
         if [ -L /usr/lib64/libz2.so.1.0 ]; then
             echo "... Links created."
+        fi
     else
         echo "Symbolic links already exist, skipping."
     fi
