@@ -70,7 +70,7 @@ function download_bitwig()
 #=============================================================================
 function unpack_bitwig()
 {
-  echo "Unpacking $DEFAULT_FILENAME . Please Wait."
+  echo "Unpacking $DEFAULT_FILENAME. Please Wait..."
   tmpfile=$(mktemp)
   dpkg-deb -xv $DEFAULT_FILENAME / | grep -v '[/]$' >> $tmpfile
   mv $tmpfile $INSTALL_LOG
@@ -85,7 +85,7 @@ function unpack_bitwig()
 #=============================================================================
 function install_dependencies()
 {
-  echo "Installing dependencies. Please Wait."
+  echo "Installing dependencies. Please Wait..."
   dnf -y install libbsd bzip2-libs dpkg wget
 }
 
